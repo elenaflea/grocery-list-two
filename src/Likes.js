@@ -14,9 +14,6 @@ export class Likes extends Component {
     }
     updateLikesMois(){
         this.setState({ likes: this.state.likes - 1})
-        if( {likes: -1} ) {
-            this.setState({ likes: 0})
-        }
     }
 
 render(){
