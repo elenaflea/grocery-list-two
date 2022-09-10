@@ -141,6 +141,22 @@ li{
   font-size: 20px;
   font-weight: 600;
 }
+.likeBtn{
+  background: transparent;
+  border: none;
+  color: #11998e;
+}
+.likeBtn:hover{
+  background: transparent;
+  border: none;
+  color: #a3f0c1; 
+}
+.likeLine{
+  display: flex;
+  justify-content: center;
+  margin: 0 10px 0 10px;
+}
+
 .footer{
   background: #11998e;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
@@ -160,7 +176,7 @@ li{
   text-decoration: none;
   color: #ffffff;
   }
-  
+
 .line:hover{
   color: #a3f0c1;
 }
