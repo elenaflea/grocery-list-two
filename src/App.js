@@ -13,12 +13,15 @@ function App() {
       <div className='food'></div>
       <div className='container'>
       <img src={ logo } className="App-logo" alt="logo" />
+      <div className='containerTwo'>
       <p className='myShopping'>My Shopping</p>
       <p className='list'>LIST</p>
 
       < GroceryList />
       <Likes /> 
       <MyLinks />
+      </div>
+      
       </div>
        
       
