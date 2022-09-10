@@ -154,6 +154,7 @@ li{
   font-family: 'Encode Sans', sans-serif;
   font-size: 16px;
   text-decoration: none;
+  margin-top: 10px;
 }
 .links:hover{
   color: #a3f0c1;
