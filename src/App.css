@@ -142,23 +142,33 @@ li{
   font-weight: 600;
 }
 .footer{
-  min-height: 75px;
   background: #11998e;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-top: 20px;
-  width: 100%;
+  border-top: 6px solid #38ef7d;
+  margin-top: 20px;
+  padding-top: 20px;
 }
-.links{
-  color: #fff;
-  font-family: 'Encode Sans', sans-serif;
-  font-size: 16px;
+
+.line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  margin-top: 10px;
-  padding-top: 10px;
-}
-.links:hover{
+  color: #ffffff;
+  }
+  
+.line:hover{
   color: #a3f0c1;
+}
+.footer-text{
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: .5px;
+}
+.line-heart{
+  margin: 5px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
