@@ -31,7 +31,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(252, 252, 252, 0.4);
+  background: rgba(252, 252, 252, 0.7);
   min-height: 100vh;
   width: 500px;
   z-index: 2;
