@@ -1,250 +1,32 @@
-.App {
-  text-align: center;
-  min-height: 100vh;
-  background: #11998e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  
-}
-.food{
-  position: fixed;
-  top: 0;
-  right: 0;
-  min-height: 100vh;
-  min-width: 100wh;
-  height: 100%;
-  width: 100%;
-  background: url(images/foodback2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(252, 252, 252, 0.7);
-  min-height: 100vh;
-  width: 400px;
-  z-index: 2;
-}
-.App-logo {
-  height: 300px;
-  pointer-events: none;
-  margin-top: 30px;
-  margin-bottom: 30px;
- /* filter: drop-shadow(0px 0px 5px  #ffffff);
-  -webkit-filter: drop-shadow(0px 0px 5px  #ffffff);*/
-}
-.containerTwo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #fafafa;
-  width: 100%;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  z-index: 2;
-}
-.myShopping{
-font-family: 'Style Script';
- font-size: 50px;
- color: #336666;
- padding: 0;
- margin-bottom: 0px;
-}
-
-.list{
-font-family: 'Encode Sans', sans-serif;
- font-size: 30px;
- font-weight: 700;
- letter-spacing: 6px;
- color: #336666;
- margin-top: 0px;
- padding: 0;
-}
-input{
-  background: #D9F8C4;
-  font-family: 'Encode Sans', sans-serif;
-  font-size: 20px;
-  border: none;
-  padding: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-button{
-  background: #11998e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: 'Encode Sans', sans-serif;
-  font-size: 20px;
-  padding: 10px;
-  border: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  color: #fff;
-  cursor: pointer;
-}
-.dis{
-  background: #11998e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-
-}
-.delete{
-  background: #fc4a1a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  color: #fff;
-}
-button:hover, .dis:hover{
-  background: #11998e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2ab15d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2ab15d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.delete:hover{
-  background: #fc4a1a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f58a32, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f58a32, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-ul{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background: #D9F8C4;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  min-height: 30px;
-
-}
-li{
-  font-family: 'Encode Sans', sans-serif;
-  font-size: 20px;
-  color: #222222;
-  cursor: pointer;
- 
-}
-.deleted{
-
-  color: rgba(34, 34, 34, 0.2);
-}
-.likes{
-  color: #11998e;
-  font-family: 'Encode Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-}
-.likeBtn{
-  background: transparent;
-  border: none;
-  color: #11998e;
-}
-.likeBtn:hover{
-  background: transparent;
-  border: none;
-  color: #a3f0c1; 
-}
-.likeLine{
-  display: flex;
-  justify-content: center;
-  margin: 0 10px 0 10px;
-}
-
-.footer{
-  background: #11998e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  margin-top: 20px;
-  border-top: 6px solid #38ef7d;
-  padding-top: 20px;
-  width: 100%;
-  min-height: 75px;
-}
-
-.line{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #ffffff;
-  }
-
-.line:hover{
-  color: #a3f0c1;
-}
-.footer-text{
-  font-family: 'Encode Sans', sans-serif;
-  font-size: 12px;
-  letter-spacing: .5px;
-}
-.line-heart{
-  margin: 5px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+import logo from './images/logo4.png';
+import './App.css';
+import { GroceryList } from './GroceryList';
+// import DatingProfile from './DatingProfile';
+import { Likes } from './Likes';
+import MyLinks from './MyLink';
 
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+function App() {
+  return (
+    <div className="App">
+      <div className='food'></div>
+      <div className='container'>
+      <img src={ logo } className="App-logo" alt="logo" />
+      <div className='containerTwo'>
+      <p className='myShopping'>My Shopping</p>
+      <p className='list'>LIST</p>
+
+      < GroceryList />
+      <Likes /> 
+      <MyLinks />
+      </div>
+      
+      </div>
+       
+      
+  </div>
+  );
 }
 
-
-@media all and (max-width:500px){
-  .container{
-    width: 100%;
-  }
-  .App-logo{
-    height: 250px;
-  }
-}
-
-@media all and (max-width:320px){
-  .container{
-    width: 100%;
-  }
-  .myShopping{
-    font-size: 40px;
-  }
-  .list{
-    font-size: 20px;
-  }
-  .App-logo{
-    height: 150px;
-  }
-  input{
-    width: 50%;
-  }
-  ul{
-    width: 200px;
-    align-self: center;
-    }
-}
+export default App;
